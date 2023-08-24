@@ -1,5 +1,12 @@
 import './style.css';
 
+const component = () => {
+    const element = document.createElement('div');
+ 
+    element.id ="content";
+ 
+  }
+
 function hero__title_component() {
     const hero__title = document.createElement('h1');
     hero__title.innerHTML = "Gyu-tan Restaurant Ouji";
@@ -24,8 +31,19 @@ function hero__description_component() {
     return hero__description;
 }
 
-export {
-    hero__title_component,
-    hero__img_component,
-    hero__description_component
-};
+
+
+
+export function initializePage() {
+    const contentDiv = document.querySelector('#content');
+
+    // Create and append your initial elements here
+    const title = hero__title_component();
+    contentDiv.appendChild(title);
+
+    const img = hero__img_component();
+    contentDiv.appendChild(img);
+
+    const description = hero__description_component();
+    contentDiv.appendChild(description);
+}
