@@ -1,0 +1,47 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+
+#content {
+  height: 100vh;
+
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://live.staticflickr.com/65535/50901366128_d2749c6e60_h.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__img {
+  width: 500px;
+}
+
+.hero__title {
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.hero__description {
+  color: white;
+  max-width: 65ch;
+}
