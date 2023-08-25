@@ -36,6 +36,7 @@ function hero__description_component() {
 
 export function initializePage() {
     const contentDiv = document.querySelector('#content');
+    contentDiv.innerHTML = ''; // Clear existing content
 
     // Create and append your initial elements here
     const title = hero__title_component();
